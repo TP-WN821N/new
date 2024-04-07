@@ -15,7 +15,7 @@ currentTwo.innerHTML=0
 
 rollBtn.addEventListener('click', ()=> {
    let randNumber = Number((Math.random()*5).toFixed(0))+1
-   diceImg.src = `http://127.0.0.1:5500/dice-${randNumber}.png`
+   diceImg.src = `dice-${randNumber}.png`
    let newArray = []
    playerOne.classList.forEach((item) => {
       newArray.push(item)
@@ -106,7 +106,7 @@ newBtn.addEventListener('click', ()=> {
    if(Number(scoreOne.innerHTML) < 100 || Number(scoreTwo.innerHTML) < 100) {
       rollBtn.addEventListener('click', ()=> {
          diceImg.classList.remove('append')
-         diceImg.src = `http://127.0.0.1:5500/dice-${randNumber}.png`
+         diceImg.src = `dice-${randNumber}.png`
       })
    }
 })
